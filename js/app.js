@@ -20,17 +20,17 @@ this.life= setInterval(
     
      // Life level
 this.timer =setInterval(
-this.hungerGage.bind(this),10000)
+this.hungerGage.bind(this),3000)
 
 
 this.timerS =setInterval(
-this.sleepGage.bind(this),10000)
+this.sleepGage.bind(this),3000)
 
 
 
 
 this.timerB =setInterval(
-this.boredomGage.bind(this),10000)    
+this.boredomGage.bind(this),3000)    
     
 }
 
