@@ -1,1 +1,1 @@
-# tamagochi2022
+# tamagotchi
