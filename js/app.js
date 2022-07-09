@@ -10,7 +10,7 @@ this.age =age
 this.cond =0
 //     Increase your pet's age every x minutes
 this.life= setInterval(
-    this.ageUp.bind(this),100000 )
+    this.ageUp.bind(this),30000 )
     
      // Lift level
 this.timer =setInterval(
@@ -94,6 +94,7 @@ boredomGage(){
        event.preventDefault();
  document.body.style.backgroundColor='skyblue'
  document.body.style.color='black'
+ document.span.style.color='black'
  })
 }
 
@@ -165,6 +166,15 @@ boreV.innerHTML =`${this.boredom}`
  ageUp(){
  const ageBtn = document.querySelector('.urAge')
        this.age++;
+       if(this.age ===3){
+        document.body.style.backgroundColor='pink'
+        document.body.style.color='black'
+        
+       }
+       else if(this.age ===6){
+        document.body.style.backgroundColor='light-green'
+       }
+       
       ageBtn.innerHTML =`${this.age}`     
                      
           console.log(`${this.age}`)  
@@ -172,10 +182,7 @@ boreV.innerHTML =`${this.boredom}`
     
 }
 
-endIng(){
-  
 
-}
 
 }
     
@@ -192,11 +199,11 @@ game.buttonSleep()
 game.ageUp()
 
 
-//  game.inputName()
+ game.inputName()
 game.hungerGage()
 game.sleepGage()
 game.boredomGage()
-//  game.endIng()
+
 
 
 

@@ -2,10 +2,21 @@ body{
   position:relative;
   width:100%
   height:100%
-  background-color:black;
-  font-family:'Verdana';
-  color:whitesmoke
+  background-color:brown;
+ 
+  color:black;
 
+}
+img{
+  /* display:block */
+  height:300px;
+  width:300px;
+  margin:auto;
+  padding-left: 350px;
+  padding-bottom: 550px
+
+
+  
 }
 
 .onBtn,.offBtn{
@@ -35,12 +46,9 @@ body{
 span{
   font-size: large;
   font-weight: bolder;
-  color:whitesmoke
+ 
 }
-img{
-  height: 100px;
-  width:100px;
-}
+
 #x{
   
   position:absolute;
