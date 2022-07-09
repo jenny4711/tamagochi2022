@@ -39,6 +39,7 @@ for(let i = 0 ; i <1; i++){
 this.hunger+=1
 console.log(this.hunger)
 }
+
 if(this.hunger >=10){
 
 clearInterval(this.timer)
@@ -53,17 +54,18 @@ alert('Ypur Pet is death')
 
 
 sleepGage(){
-  const sleepV =document.querySelector('.sleepP')
-  for(let i = 0 ; i <1; i++){
-    this.sleep+=1
-    console.log(this.sleep)
-    }
-    if(this.sleep>=10){
-    
-    clearInterval(this.timerS)
-    alert('Ypur Pet is death')
-     }
-     sleepV.innerHTML =`${this.sleep}`
+      const hungerV =document.querySelector('.sleepP') 
+      for(let i = 0 ; i <10; i++){
+      this.sleep+=1
+      console.log(this.sleep)
+      }
+      if(this.sleep >=10){
+      
+      clearInterval(this.timer)
+      alert('Ypur Pet is death')
+
+      
+       }
 }
 
 
@@ -138,7 +140,7 @@ const sleep = document.querySelector('.buttonS')
       sleep.addEventListener('click',(event)=>{
       event.preventDefault()
       this.sleep-=1
-     
+      
       sleepV.innerHTML =`${this.sleep}`
           
       
