@@ -109,8 +109,8 @@ boredomGage(){
  }
 // Add the ability to name your pet.
 inputName(){
-     let userName =prompt("What is your Pet's name?")
-  document.querySelector('#name').innerHTML =`Pet's name is ${userName}`;
+     let userName =prompt("What  is your Pet's name?")
+  document.querySelector('#name').innerHTML =`Pet: ${userName}`;
         
     }
 //  Add buttons to the screen to feed your pet, turn off the lights, and play with your pet.   
